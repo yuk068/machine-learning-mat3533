@@ -30,3 +30,8 @@ def logistic_sigmoid_regression(X, y, w_init, eta, tol = 1e-4, max_count = 10000
                     return w
             w.append(w_new)
     return w
+
+def min_max_normalize(X):
+    X_min = X.min(axis=0)
+    X_max = X.max(axis=0)
+    return (X - X_min) / (X_max - X_min)

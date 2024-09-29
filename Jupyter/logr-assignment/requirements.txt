@@ -77,3 +77,4 @@ https://repo.anaconda.com/pkgs/main/win-64/numexpr-2.8.7-py312h96b7d27_0.conda
 https://repo.anaconda.com/pkgs/main/win-64/scipy-1.13.1-py312hbb039d4_0.conda
 https://repo.anaconda.com/pkgs/main/win-64/pandas-2.2.2-py312h0158946_0.conda
 https://repo.anaconda.com/pkgs/main/win-64/scikit-learn-1.5.1-py312h0158946_0.conda
+https://repo.anaconda.com/pkgs/main/win-64/seaborn-0.13.2-py312haa95532_0.conda

@@ -1,7 +1,6 @@
 import numpy as np
 
 def sigmoid(s):
-    s = np.clip(s, -500, 500)
     return 1 / (1 + np.exp(-s))
 
 def logistic_sigmoid_regression(X, y, w_init, eta, tol = 1e-4, max_count = 10000):
