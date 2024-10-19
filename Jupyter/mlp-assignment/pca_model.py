@@ -44,13 +44,13 @@ def power_method(X, num_components=2, max_iter=100, tol=1e-8):
 
 
 def pca_transform(X, method='eigen_decomposition', num_components=2, max_iter=100, tol=1e-8):
-    if method == 'eigen_decomposition':
+    if method == 'eigen':
         V, Lambda = eigen_decomposition(X)
         X_transformed = X @ V[:, :num_components]
-    elif method == 'singular_value_decomposition':
+    elif method == 'svd':
         U, Sigma, Vt = singular_value_decomposition(X, num_components)
         X_transformed = U[:, :num_components] @ np.diag(Sigma[:num_components])
-    elif method == 'power_method':
+    elif method == 'pow_m':
         components = power_method(X, num_components, max_iter, tol)
         X_transformed = X @ components
     else:
